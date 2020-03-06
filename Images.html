@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  header
+		{
+			height: 200px;
+			text-align: center;
+      background-color: black;	
+		}
+ 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+img 
+{
+  height: 300px;
+  width: 510px;
+}
+
+         
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            width: 650px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: black;
+          }
+          
+          .container:hover .overlay {
+            opacity: 0.5;
+          }
+          
+          .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          .perspective-text {
+            color: grey;
+            font-family: Arial;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+          }
+          
+          .perspective-line {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+          }
+          
+          p {
+            margin: 0;
+            height: 50px;
+            line-height: 50px;
+            transition: all 0.5s ease-in-out;
+          }
+          
+          .perspective-line:nth-child(odd) {
+          transform: skew(60deg, -30deg) 
+          transform: scale(20);;
+             
+          }
+          
+          .perspective-line:nth-child(even) {
+            transform:  scaleY(1.333);
+            transform:skew(0deg, -30deg)
+            transform: scale(20);;
+          }
+          
+          .perspective-line {
+            position: relative;
+          }
+          
+          .perspective-text:hover p{
+            transform: translate(0, -50px);
+          }
+          
+          .perspective-line:nth-child(1) {
+            left: 29px;
+          }
+          
+          .perspective-line:nth-child(2) {
+            left: 58px;
+          }
+          
+          .perspective-line:nth-child(3) {
+            left: 87px;
+          }
+          
+          .perspective-line:nth-child(4) {
+            left: 116px;
+          }
+          
+          .perspective-line:nth-child(5) {
+            left: 145px;
+          }
+          
+          .perspective-line:hover p{
+            transform: translate(0, -50px);
+          }
+          
+          p {
+            transition: all 0.5s ease-in-out;
+          }
+</style>
+</head>
+<body background="bg.jpg" style="background-size: cover;">
+  <center>
+  <header>
+		<div class="perspective-text">
+			<div class="perspective-line">			 
+			</div>
+			<div class="perspective-line">
+			  <p>Educational</p>
+			  <p>Education</p>
+			</div>
+			<div class="perspective-line">
+			  <p>Education</p>
+			  <p>Educational</p>
+			</div>
+  </header>
+  <br>
+  <div class="container">
+		<img src="edu1.jpg">
+		<div class="overlay">
+		  <div class="text">
+			  <p>Education is power. 
+			  </p></div>
+		</div>
+	  </div>
+	  <div class="container">
+	 <img src="edu2.jpg">
+		<div class="overlay">
+		  <div class="text">
+			  <p>Education Brings Prosperity.
+			  </p></div>
+		</div>
+	  </div>
+	  <div class="container">
+		<img src="edu3.jpg">
+		<div class="overlay">
+		  <div class="text">
+			  <p>Education is a human right with immense power to transformation.</p></div>
+		</div>
+	  </div>
+	  <div class="container">
+		<img src="edu4.jpg">
+		<div class="overlay">
+		  <div class="text">
+			  <p>You educate a man, you educate a man.
+			  </p></div> 
+			  </p></div>
+		</div>
+	  </div>
+	  <div class="container">
+	  <img src="edu5.jpg">
+		<div class="overlay">
+		  <div class="text">
+			  <p>Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+	   
+			  </p></div>
+		</div>
+	  </div>
+	  <div class="container">
+	  <img src="edu6.jpg">
+		<div class="overlay">
+		  <div class="text">
+			  <p>The greatest glory in living lies not in never falling, but in rising every time we fall.  
+			  </p></div>
+		</div>
+	  </div>
+ 
+  </center>
+
+</body>
+</html>
+
